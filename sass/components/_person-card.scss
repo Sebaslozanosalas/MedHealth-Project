@@ -1,0 +1,57 @@
+.person-card {
+
+    width: 32%;
+    @include respond (bp-sm) {
+
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        width: 40rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    @include respond (bp-xxs){
+        width: 100%;
+    }
+    
+
+    background-color: $color-white;
+    border-radius: 2rem;
+    border-bottom-left-radius: 8rem;
+
+    border: 2px solid $color-secondary;
+
+    overflow: hidden;
+
+    &__img {
+        width: 100%;
+
+        border-bottom-left-radius: 8rem;
+        border-bottom: 1.3rem solid $color-secondary;
+
+    }
+
+    &__info-box {
+        padding: 3rem 3rem;
+        padding-bottom: 4rem;
+        
+        text-align: center;
+    }
+
+    &__social {
+
+        width: 40%;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ion-icon {
+            font-size: 2rem;
+            color: $color-primary-light;
+        }
+    }
+
+}

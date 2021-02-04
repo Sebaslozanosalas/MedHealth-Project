@@ -1,0 +1,45 @@
+.card {
+
+    width: 30%;
+    @include respond (bp-sm) {
+
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+        width: 50rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    padding: 6rem 3rem;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background-color: $color-white;
+    border-radius: 1rem;
+    border-bottom-left-radius: 6rem;
+    box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .08);
+
+
+    &__img {
+
+        height: 5rem;
+        width: 5rem;
+
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+
+        margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 2rem;
+    }
+}

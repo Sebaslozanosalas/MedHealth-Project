@@ -1,0 +1,41 @@
+.team {
+
+    width: 100%;
+    min-height: 100rem;
+
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .6), rgba($color-secondary, .05));
+    
+
+    &__container {
+
+        padding: 10rem 0;
+
+        max-width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            text-align: center;
+        }
+    }
+
+    &__team-box {
+
+        padding: 3rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(bp-sm) {
+            flex-direction: column;
+        }
+    }
+}

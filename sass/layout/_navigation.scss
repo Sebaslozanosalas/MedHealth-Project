@@ -1,0 +1,134 @@
+.navigation {
+
+    width: $max-width;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 20;
+
+    @include respond (bp-md) {
+        max-width: $max-width-md;
+    }
+    @include respond (bp-sm) {
+        max-width: $max-width-sm;
+    }
+    @include respond (bp-xs) {
+        background-color: $color-white;
+        max-width: 100%;
+        padding: 1rem 3rem;
+        top: 0;
+        height: 7rem;
+    }
+
+
+
+
+    &__logo-box {
+        display: block;
+        max-width: 11.7rem;
+
+        @include respond (bp-lg) {
+            max-width: 12.3rem;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__nav {
+
+        font-size: 1.2rem;
+        font-family: $font-nav;
+        font-weight: 700;
+
+        @include respond(bp-lg) {
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    &__list {
+        list-style: none;
+
+        display: flex;
+
+        @include respond (bp-xs) {
+            background-color: $color-secondary;
+            height: 40vh;
+            width: 100%;
+            position: absolute;
+            top: 7rem;
+            left: 0;
+            transform: scaleY(0);
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            transform-origin: top;
+            transition: all .1s ease-in-out;
+
+
+            padding: 1rem 3rem;
+            opacity: 0;
+
+        }   
+    }
+
+    & .navigation-active {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    &__item {
+
+        &:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+        @include respond(bp-xs) {
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-primary;
+
+    }
+
+    &__link--active:link,
+    &__link--active:visited {
+        color: lighten($color-primary, 20%);
+    }
+
+    & .burger-box {
+        cursor: pointer;
+        display: none;
+
+        @include respond (bp-xs) {
+            display: block;
+        }
+        
+    }
+
+    & .burger  {
+        min-height: 3px;
+        width: 2.5rem;
+        background-color: $color-primary;
+
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+}

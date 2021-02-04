@@ -1,0 +1,194 @@
+.contact {
+
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .6), rgba($color-secondary, .3));
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+
+        margin: 10rem 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+
+        width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+        }
+    }
+
+    &__item-box {
+        background-color: $color-white;
+        width: 31.8%;
+        padding: 7rem 2rem;
+
+        border-radius: 1.5rem;
+        border-bottom-left-radius: 8rem;
+
+        border: .2rem solid $color-secondary;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        @include respond(bp-md){
+            width: 100%;
+            max-width: 38rem;
+
+            justify-content: center;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+            
+        }
+    }
+
+    &__figure {
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        margin: 0 2rem;
+
+        
+    }
+
+    ion-icon {
+        color: $color-primary;
+        width: 100%;
+        height: 100%;
+      }
+
+}
+
+.get-in-touch {
+
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .3), rgba($color-secondary, .05));
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 10rem 0;
+
+        width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+
+            flex-direction: column;
+            align-items: center;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+        }
+    }
+
+    &__map-box {
+        background-color: peachpuff;
+        width: 45%;
+
+        @include respond (bp-md) {
+            width: 90%;
+            margin-bottom: 8rem;
+        }
+    }
+
+    #map {
+        height: 80rem;
+        width: 100%;
+
+        @include respond (bp-md) {
+            height: 40rem;
+        }
+    }
+
+
+    &__form-box {
+        width: 40%;
+        @include respond (bp-md) {
+            width: 75%;
+            
+            
+            text-align: center;
+            
+
+            // To select only the button container
+            & > *:last-child {
+                text-align: end;
+            }
+        }
+
+        @include respond (bp-xs) {
+            width: 100%;
+            
+        }
+    }
+
+    &__form-item {
+
+        & > * {
+
+            display: inline-block;
+            width: 100%;
+            padding: 2rem 2rem;
+
+            border-radius: 100px;
+            background-color: $color-white;
+            border: .2rem solid $color-secondary;
+
+            outline: none;
+
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        ::-webkit-input-placeholder {
+            font-family: $font-secondary;
+            font-style: italic;
+            font-size: 1.5rem;
+            color: darken($color-secondary, 10%);
+        }
+
+        & .message-input {
+            min-height: 20rem;
+            border-radius: 3rem;
+
+            &::-webkit-input-placeholder {
+                transform: translateY(-6rem);
+            }
+        }
+
+        button {
+            background-color: $color-primary-light;
+            display: inline;
+            width: auto;
+            padding: 1.7rem 3rem;
+            color: $color-secondary;
+            border: none;
+            font-family: $font-primary;
+            font-size: 1.75rem;
+        }
+    }
+}
+

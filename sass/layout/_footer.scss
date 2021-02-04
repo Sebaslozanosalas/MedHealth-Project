@@ -1,0 +1,205 @@
+.footer-global {
+
+    background-image: linear-gradient(to top ,$color-secondary, rgba($color-secondary, .05)), url(../img/footer-bg-img.png);
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: bottom center;
+
+    width: 100%;
+    min-height: 50vh;
+    
+    @include respond(bp-sm) {
+        height: 130rem;
+        max-height: 130rem;
+    }
+
+    @include respond (bp-xs) {
+        height: 130rem;
+        max-height: 130rem;
+    }
+    @include respond (bp-xxs) {
+        height: 140rem;
+        max-height: 140rem;
+    }
+
+    // To center the content container
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    //
+
+
+    &__newsletter-box {
+
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__form-group {
+        display: flex;
+        @include respond(bp-xxs) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__input,
+    &__input:focus {
+
+        text-align: start;
+        display: block;
+        width: 60rem;
+        max-width: 100%;
+
+        border-radius: 100px;
+        outline: none;
+        border: .2rem solid $color-secondary;
+        padding: 1rem 3rem;
+        margin-right: 1rem;
+
+        @include respond(bp-xxs) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input::-webkit-input-placeholder {
+        font-family: $font-secondary;
+        font-style: italic;
+        font-weight: 200;
+        font-size: 1.7rem;
+        color: lighten($color-grey, 20%);
+    }
+
+    &__info-box {
+
+        width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            text-align: center;
+
+        }
+
+        margin-top: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    &__logo-box {
+        width: 10rem;
+    }
+
+    &__logo {
+        width: 100%;
+    }
+
+    &__contact-box {
+
+        width: 100%;
+        margin-top: 5rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(bp-sm) {
+            flex-direction: column;
+           margin-top: 10rem;
+
+        }
+    }
+
+    &__contact-item {
+        width: 28%;
+
+        @include respond(bp-sm) {
+            width: 40rem;
+            max-width: 100%;
+            flex-direction: column;
+            margin-bottom: 5rem;
+
+            & .paragraph-big {
+                font-size: 2.8rem;
+            }
+                
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__contact-icon-box {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 2.5rem;
+        background-color: lighten($color-secondary, 3%);
+        position: relative;
+        margin-right: 1rem;
+        flex-shrink: 0;
+
+        ion-icon {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            font-size: 3rem;
+            color: $color-primary-light;
+        }
+    }
+
+    
+
+    &__copyright-box {
+
+        width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+            text-align: center;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+        }
+
+        margin-top: 8rem;
+
+        border-top: 1px solid $color-white;
+        padding: 3rem 0;
+    }
+
+    &__copyright-text {
+
+        display: inline-block;
+        font-family: $font-secondary;
+        font-size: 1.4rem;
+        color: $color-primary;
+
+        @include respond (bp-sm) {
+            font-size: 1.6rem;
+        }
+        @include respond (bp-xs) {
+            font-size: 1.4rem;
+        }
+        @include respond (bp-xxs) {
+            font-size: 1.2rem;
+        }
+
+    }
+
+}

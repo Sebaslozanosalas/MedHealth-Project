@@ -1,0 +1,33 @@
+/*
+
+Breakpoints
+
+xs = 400
+sx = 500
+sm = 800
+md = 1000
+lg = 1200
+xl = 
+
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == bp-xxs {
+        @media only screen and (max-width: 25em) { @content };    //400
+    }
+    @if $breakpoint == bp-xs {
+        @media only screen and (max-width: 31.25em) { @content };    //500
+    }
+    @if $breakpoint == bp-sm {
+        @media only screen and (max-width: 50em) { @content };     //800
+    }
+    @if $breakpoint == bp-md {
+        @media only screen and (max-width: 62.5em) { @content };    //1000
+    }
+    @if $breakpoint == bp-lg {
+        @media only screen and (max-width: 75em) { @content };    //1200
+    }
+    @if $breakpoint == bp-xl {
+        @media only screen and (min-width: 1400) { @content };    //
+    }
+}

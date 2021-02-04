@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact | MedHealth</title>
+</head>
+<body>
+
+    <div class="navigation">
+
+        <div class="navigation__logo-box">
+            <img  src="../img/logo.png" alt="logo" class="navigation__logo">
+        </div>
+
+        <nav class="navigation__nav">
+            <div class="burger-box">
+                <div class="burger burger-1"></div>
+                <div class="burger burger-2"></div>
+                <div class="burger burger-3"></div>
+            </div>
+            <ul class="navigation__list ">
+                <li class="navigation__item"><a href="../index.html" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="about.html" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="services.html" class="navigation__link">Services</a></li>
+                <li class="navigation__item"><a href="team.html" class="navigation__link">Team</a></li>
+                <li class="navigation__item"><a href="contact.html" class="navigation__link navigation__link--active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="global-header">
+        <div class="global-header__container">
+            <h1 class="page-title mb-md">
+                Get in touch
+            </h1>
+            <p class="paragraph-big">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit odio vel vestibulum tempus.
+            </p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact__item-box">
+                    <figure class="contact__figure">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </figure>
+                        
+                    <div class="contact__item-text-box">
+                        <h4 class="small-component-title">
+                            Email Address
+                        </h4>
+                        <p class="paragraph">
+                            info@example.com
+                        </p>
+                        <p class="paragraph">
+                            info@medhealt.com
+                        </p>
+                    </div>
+                </div>
+                <div class="contact__item-box">
+                    <figure class="contact__figure">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </figure>
+                    <div class="contact__item-text-box">
+                        <h4 class="small-component-title">
+                            Phone Number
+                        </h4>
+                        <p class="paragraph">
+                            (+44)05084347571
+                        </p>
+                        <p class="paragraph">
+                            (+44)05084347572
+                        </p>
+                    </div>
+                </div>
+                <div class="contact__item-box">
+                    <figure class="contact__figure">
+                        <ion-icon name="location-outline"></ion-icon>
+                    </figure>
+                    <div class="contact__item-text-box">
+                        <h4 class="small-component-title">
+                            Clinic Location
+                        </h4>
+                        <p class="paragraph">
+                            164-178 Cromwell Rd, Kensington, Central London
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="get-in-touch">
+            <div class="get-in-touch__container">
+                <div class="get-in-touch__map-box">
+                    <div id="map"></div>
+                </div>
+                <div class="get-in-touch__form-box">
+                    <h5 class="section-title-secondary">
+                        Get In Touch
+                    </h5>
+                    <p class="section-sub-title-big mb-lg">
+                        We Are Here For You
+                    </p>
+                    <form action="" class="get-in-touch__form">
+                        <div class="get-in-touch__form-item">
+                            <input type="text" placeholder="Your Full Name *" required>
+                        </div>
+                        <div class="get-in-touch__form-item">
+                            <input type="email" placeholder="Your e-mail address *" required>
+                        </div>
+                        <div class="get-in-touch__form-item">
+                            <input type="number" placeholder="Your Phone *" required>
+                        </div>
+                        <div class="get-in-touch__form-item">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="get-in-touch__form-item">
+                            <input type="text" class="message-input" placeholder="Your Message *" required>
+                        </div>
+                        <div class="get-in-touch__form-item">
+                            <button type="button">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-global">
+        
+        <div class="footer-global__newsletter-box">
+            <h5 class="section-title-secondary mb-xs">
+                Newsletter
+            </h5>
+            <p class="section-sub-title-big mb-md">
+                Stay Informed & Healthy
+            </p>  
+            <form class="footer-global__form-group">
+                <input type="email" placeholder="Your email address" class="footer-global__input">
+                <button type="button" class="btn btn--form">Subscribe</button>
+            </form>
+        </div>
+          
+        <div class="footer-global__info-box">
+            <div class="footer-global__logo-box mb-xs">
+                <img src="../img/logo.png" alt="logo" class="footer-global__logo">
+            </div>
+            <h2 class="footer-title mb-md">
+                Better Health Care Is Our Mission
+            </h2>
+            <p class="paragraph-big">
+                24/7 Service. Same Day Appointments Are Available.
+            </p>
+
+            <div class="footer-global__contact-box">
+                <div class="footer-global__contact-item">
+                    <div class="footer-global__contact-icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <p class="paragraph-big">
+                        (+44)05084347571
+                    </p>
+                </div>
+
+                <div class="footer-global__contact-item">
+                    <div class="footer-global__contact-icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <p class="paragraph-big">
+                        info@medhealth.com
+                    </p>
+                </div>
+
+                <div class="footer-global__contact-item">
+                    <div class="footer-global__contact-icon-box">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <p class="paragraph-big">
+                        164-178 Cromwell Rd, Kensington, Central London
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-global__copyright-box">
+            <p class="footer-global__copyright-text">
+                Coded by Sebastian Lozano | No my own design | All credits to https://www.cssigniter.com/elementor/medhealth-home/
+            </p>
+        </div>
+
+    </footer>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkAHKYLPrcxCEnLPrGe1wpvWnTZNXNRPw&callback=initMap">
+</script>
+    <script src="../js/app.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+   
+</body>
+</html>

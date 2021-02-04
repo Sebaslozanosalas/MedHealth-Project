@@ -1,0 +1,563 @@
+.header-landing {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 100rem;
+
+    @include respond (bp-sm) {
+        height: 120rem;
+        max-height: 120rem;
+    }
+
+    @include respond (bp-xs) {
+        height: 100rem;
+        max-height: 100rem;
+    }
+
+    
+    
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .95), rgba($color-secondary, .75)), url(../img/header-bg-shape.png);
+    background-size: cover;
+    background-position: bottom;
+    
+    &__container {
+
+        max-width: $max-width;
+
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        height: 80%;
+
+        // To make 2 columns and to center the content vertically and separate them 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond (bp-sm) {
+            flex-direction: column;
+            max-width: $max-width-sm;
+        }
+
+    }
+
+    &__text-box {
+        width: 40%;
+        @include respond (bp-sm) {
+            width: 90%;
+            text-align: center;
+        }
+        @include respond (bp-xs) {
+            width: 100%;
+            margin-top: -8rem;
+        }
+    }
+
+    &__img-box {
+        width: 50%;
+        @include respond (bp-sm) {
+            width: 80%;
+            order: -1;
+        }
+        @include respond (bp-xs) {
+            width: 100%;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+    
+}
+
+.useful-information {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 80rem;
+
+    @include respond (bp-sm) {
+        height: 150rem;
+        max-height:150rem;
+        padding: 15rem 0;
+    }
+
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .75), rgba($color-secondary, 0));
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    &__container {
+        max-width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            max-height: 90%;
+
+        }
+        background-image: url(../img/useful-inforamation-bg-shape.png);
+        text-align: center;
+        background-repeat: no-repeat;
+    }
+
+    &__card-container {
+
+        display: flex;
+        justify-content: space-between;
+
+        @include respond (bp-sm) {
+            flex-direction: column;
+           
+        }
+    }
+}
+
+.we-provide {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 80rem;
+
+    @include respond (bp-sm) {
+        height: 120rem;
+        max-height: 120rem;
+    }
+
+    
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    background-image: url(../img/we-provide__bg-shape.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+
+    &__container {
+
+         // To make 2 columns and to center the content vertically and separate them 
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         max-width: $max-width;
+         @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            flex-direction: column;
+        }
+
+
+    }
+
+    &__img-box {
+        width: 40%;
+        @include respond (bp-sm) {
+            width: 60%;
+            margin-bottom: 5rem;
+        }
+        @include respond (bp-xs) {
+            width: 85%;
+        }
+
+        overflow: hidden;
+
+        border-radius: 3rem;
+        border-bottom-left-radius: 10rem;
+
+    }
+
+    &__text-box {
+        width: 50%;
+        @include respond (bp-sm) {
+            width: 75%;
+        }
+        @include respond (bp-xs) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.departments {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 80rem;
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    @include respond (bp-sm) {
+        height: 120rem;
+        max-height: 120rem;
+    }
+    @include respond(bp-xs) {
+        height: 150rem;
+        max-height: 150rem;
+    }
+
+    margin: 10rem 0;
+
+    background-color: $color-white;
+
+
+    &__container {
+        
+        max-width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            text-align: center;
+        }
+        background-color: $color-white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__grid {
+
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, min-content);
+        }
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20rem;
+
+        padding: 5rem 3rem ;
+
+        border-radius: 2.5rem;
+        border-bottom-left-radius: 10rem;
+
+        box-shadow: 0 2rem 6rem rgba(0,0,0, .10);
+
+        @include respond (bp-xs) {
+            padding: 5rem 0;
+            border-radius: 2.5rem;
+        }
+    
+    }
+
+    &__grid-item {
+
+        padding: 3rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+
+        
+        
+
+        &--1 {
+            border-color: rgba($color-secondary, .3);
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+        }
+
+        &--2 {
+            border-color: rgba($color-secondary, .3);
+            border-style: solid;
+            border-width: 0 0 1px 1px;
+        }
+
+        &--3 {
+            border-color: rgba($color-secondary, .3);
+            border-style: solid;
+            border-width: 1px 1px 0 0;
+        }
+
+        &--4 {
+            border-color: rgba($color-secondary, .3);
+            border-style: solid;
+            border-width: 1px 0 0 1px;
+        }
+
+        @include respond (bp-sm) {
+
+            border-width: 0;
+
+            &:not(:first-child){
+                border-color: rgba($color-secondary, .3);
+                border-style: solid;
+                border-width: 1px 0 0 0;
+            }
+        }
+
+        @include respond(bp-xs) {
+            flex-direction: column;
+            text-align: center;
+
+            margin-bottom: 3rem;
+        }
+
+        
+    }
+
+    
+    &__item-text-box {
+        margin-left: 3rem;
+        @include respond(bp-xs) {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        width: 10rem;
+        height: 10rem;
+
+        @include respond (bp-xs) {
+            width: 7rem;
+            height: 7rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__text-box {
+        align-self: flex-start;
+        
+        @include respond(bp-sm) {
+            align-self: center;
+        }
+    }
+
+}
+
+.our-team {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 80rem;
+
+    @include respond (bp-sm) {
+        height: 220rem;
+        max-height: 220rem;
+    }
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    margin: 20rem 0;
+
+    @include respond (bp-xs) {
+        margin: 5rem 0;
+    }
+
+
+    background-color: $color-white;
+
+    &__container {
+
+        max-width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            text-align: center;
+        }
+        background-color: $color-white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__team-box {
+        
+        padding: 3rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(bp-sm) {
+            flex-direction: column;
+        }
+    }
+}
+
+.testimonials {
+
+    width: 100%;
+    height: 100vh;
+    max-height: 80rem;
+
+    @include respond (bp-sm) {
+        height: 120rem;
+        max-height: 120rem;
+    }
+    @include respond (bp-xs) {
+        height: 140em;
+        max-height: 140rem;
+    }
+
+    // To center the content container
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+
+    margin: 20rem 0;
+
+    @include respond (bp-sm) {
+        margin: 0;
+    }
+
+
+    background-image: url(../img/testimonials-2.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+
+
+    &__container {
+
+        // To make 2 columns and to center the content vertically and separate them 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        max-width: $max-width;
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            flex-direction: column;
+        }
+
+    }
+
+    &__title-box {
+        margin-bottom: 5rem;
+        @include respond (bp-xs) {
+            margin-bottom: 10rem;
+        }
+    }
+
+    &__text-box {
+
+        width: 50%;
+
+        @include respond (bp-sm) {
+            width: 75%;
+        }
+        
+
+        // to put the bg shape
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include respond (bp-xs) {
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
+
+    }
+
+    &__bg-shape {
+
+        position: absolute;
+        top: -5rem;
+        left: -7rem;
+        user-select: none;
+
+
+    }
+
+    &__img-box {
+
+        width: 40%;
+        @include respond (bp-sm) {
+            order: -1;
+            width: 60%;
+            margin-bottom: 10rem;
+        }
+        @include respond (bp-xs) {
+            width: 85%;
+            margin-bottom: 6rem;
+        }
+
+        overflow: hidden;
+
+        border-radius: 3rem;
+        border-bottom-right-radius: 10rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__testimonial-box {
+
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 15rem;
+        }
+    }
+
+    &__quote-logo {
+
+        position: absolute;
+        top: -10rem;
+        left: 0;
+
+        @include respond (bp-xs) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        font-size: 15rem;
+        color: $color-primary-light;
+        font-family: sans-serif;
+        user-select: none;
+    }
+}

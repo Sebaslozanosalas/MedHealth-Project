@@ -1,0 +1,30 @@
+.global-header {
+
+    background-image: linear-gradient(to bottom, $color-secondary, rgba($color-secondary, .60)) , url(../img/about-shape.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    padding: 15rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(bp-sm) {
+        padding: 15rem 0 5rem 0;
+    }
+
+    &__container {
+
+        width: 50%;
+        text-align: center;
+
+        @include respond(bp-sm) {
+            width: 70%;
+        }
+        @include respond(bp-xs) {
+            width: 90%;
+        }
+    }
+}

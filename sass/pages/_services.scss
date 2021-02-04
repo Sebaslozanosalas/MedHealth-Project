@@ -1,0 +1,78 @@
+.services {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to bottom, rgba($color-secondary, .6), rgba($color-secondary, .05));
+
+    &__container {
+
+        margin: 15rem 0;
+
+
+        max-width: 110rem;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, minmax(min-content, 1fr));
+        grid-column-gap: 3em;
+        grid-row-gap: 12rem;
+
+        @include respond (bp-md) {
+            max-width: $max-width-md;
+        }
+
+        @include respond (bp-sm) {
+            max-width: $max-width-sm;
+            grid-template-columns: minmax(60%, 50rem);
+            grid-template-rows: repeat(4, min-content);
+        }
+    }
+
+    &__item {
+
+        background-color: $color-white;
+        position: relative;
+        
+        text-align: center;
+
+        padding: 5rem 3rem;
+        padding-top: 9rem;
+
+        border-radius: 2rem;
+        border-bottom-left-radius: 9rem;
+
+        box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: .05);
+
+        @include respond(bp-md){
+            padding: 1rem 2rem;
+            padding-top: 9rem;
+        }
+
+        @include respond (bp-sm) {
+            padding: 9rem 2rem;
+            padding-top: 9rem;
+
+        }
+
+    }
+
+    &__figure {
+
+        width: 12rem;
+        height: 12rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+
+        transform: translate(-50%, -50%);
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+}

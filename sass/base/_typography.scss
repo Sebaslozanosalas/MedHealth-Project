@@ -1,0 +1,108 @@
+.page-title {
+    font-family: $font-primary;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $color-primary;
+    text-transform: capitalize;
+
+    @include respond(bp-xs) {
+        font-size: 5rem;
+    }
+}
+
+// Bold section title color primary
+.section-title-primary {
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-transform: capitalize;
+}
+
+// light blue section title
+.section-title-secondary{
+    color: $color-accent;
+    font-family: $font-secondary;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+// Section subtitle big
+.section-sub-title-big {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+//card titles 
+.small-component-title {
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-transform: capitalize;
+}
+
+// title sub paragraph
+.title-paragraph {
+    font-family: $font-secondary;
+    font-size: 2rem ;
+    font-weight: 400;
+    line-height: 2.5rem;
+
+}
+
+.footer-title {
+    font-family: $font-primary;
+    font-size: 4.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $color-primary;
+    text-transform: capitalize;
+
+    @include respond(bp-xs) {
+        font-size: 3.8rem;
+    }
+}
+
+
+.paragraph {
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: $color-grey;
+}
+
+.paragraph-color-primary {
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: $color-primary;
+}
+
+.paragraph-big {
+    font-family: $font-secondary;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: $color-grey;
+}
+
+// Anchor tag title  
+.small-component-link-title {
+
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-primary;
+    text-transform: capitalize;
+}
+
